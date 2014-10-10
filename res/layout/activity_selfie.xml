@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context="com.hiddencaliber.instaselfies.SelfieActivity" >
+
+    <TextView
+        android:id="@+id/response_msg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:text="@string/resp_msg" 
+        android:background="@color/gray"
+        android:textColor="@color/white"
+        android:textSize="16sp"/>
+
+    <HorizontalScrollView
+        android:id="@+id/hsv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fadeScrollbars="false"
+        android:fillViewport="true"
+        android:gravity="center"
+        android:measureAllChildren="false"
+        android:scrollbars="horizontal">
+
+        <LinearLayout
+            android:id="@+id/selfiesWrapper"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp" >
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</LinearLayout>
